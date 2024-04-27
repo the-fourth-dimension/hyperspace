@@ -18,6 +18,5 @@ func main() {
 	err := http.ListenAndServe(fmt.Sprintf(":%s", env.GetEnv(env.PORT)), nil)
 	if err != nil {
 		logger.Fatalf("an error occurred while starting the server: %v", err)
-		panic(1)
 	}
 }
